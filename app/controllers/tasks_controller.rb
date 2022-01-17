@@ -4,6 +4,7 @@ class TasksController < ApplicationController
   end
 
   def show
+    @task = Task.fing(params{:id})
   end
 
   def new
